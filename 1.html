@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>文档标题</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+    </head>
+    <body>
+        <hr size="5px" color="green" width="40%" align="right"/>
+        <p
+            dir="ltr"
+            class="content main"
+            id="content"
+            data-id="id"
+            style="color: red;"
+            draggable="true"
+            autocapitalize="words"
+        >my name is wuxiaohui</p>
+        <input autocapitalize="words" id="input" type="text">
+    </body>
+</html>
+<script>
+    console.log()
+    const ele = document.getElementById('content');
+    const input = document.getElementById('input');
+    input.addEventListener('onchange', (e) => {
+        console.log(e.target.value)
+    })
+    window.ele = ele;
+    for (item in ele) {
+        console.log(item, ele[item])
+    }
+</script>

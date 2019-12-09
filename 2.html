@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+    }
+    .container-left {
+        background: lightpink;
+    }
+    .container > div {
+        height: 100%;
+        /* background: lightgray; */
+    }
+    .container-middle {
+        background: lightsteelblue;
+    }
+    .container-right {
+        background: lightseagreen;
+    }
+</style>
+<body>
+    <input>
+    <div class="container">
+        <div class="container-left"></div>
+        <div class="container-middle"></div>
+        <div class="container-right"></div>
+    </div>
+</body>
+<script src="./2.function.js"></script>
+</html>

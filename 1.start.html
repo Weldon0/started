@@ -1,0 +1,136 @@
+<!-- 
+    <!DOCTYPE> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。
+    在 HTML 4.01 中，<!DOCTYPE> 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。
+    HTML5 不基于 SGML，所以不需要引用 DTD。
+
+    提示：请始终向 HTML 文档添加 <!DOCTYPE> 声明，这样浏览器才能获知文档类型。
+
+    在 HTML 4.01 中有三种 <!DOCTYPE> 声明。在 HTML5 中只有一种
+ -->
+
+ 
+<!DOCTYPE html>
+<!--  -->
+<html lang="cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <base href="https://www.baidu.com"> -->
+    <basefont color="red" size="5" />
+</head>
+
+<body>
+
+    <!-- 
+            未被访问的链接带有下划线而且是蓝色的
+            已被访问的链接带有下划线而且是紫色的
+            活动链接带有下划线而且是红色的
+         -->
+    <a href="https://www.baidu.com" target="_top">百度一下，你就知道</a>
+
+    <!-- <abbr> 标签指示简称或缩写，比如 "WWW" 或 "NATO"。 -->
+    The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.
+
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <article>
+        <h1>Internet Explorer 9</h1>
+        <p>Windows Internet Explorer 9（简称 IE9）于 2011 年 3 月 14 日发布.....</p>
+    </article>
+    <p>Me and my family visited The Epcot center this summer.</p>
+    <aside>
+        <h4>Epcot Center</h4>
+        The Epcot Center is a theme park in Disney World, Florida.
+    </aside>
+    <audio src="https://www.w3school.com.cn/i/horse.ogg" controls="controls">
+        您的浏览器不支持 audio 标签。
+    </audio>
+
+    <b>粗体文本</b>
+    <base href="">
+    <ul>
+        <li>Username <bdo dir="ltl">Bill</bdo>:80 points</li>
+        <li>Username <bdo dir="ltr">Steve</bdo>: 78 points</li>
+    </ul>
+    <bdo dir="rtl">Here is some text</bdo>
+
+    <big>
+        大文本
+    </big>
+    <blockquote>
+        Here is a long quotation here is a long quotation here is a long quotation
+        here is a long quotation here is a long quotation here is a long quotation
+        here is a long quotation here is a long quotation here is a long quotation.
+    </blockquote>
+    <button disabled>
+        按钮
+    </button>
+    <canvas id="myCanvas"></canvas>
+
+    <script type="text/javascript">
+
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(0, 0, 80, 100);
+
+    </script>
+    <table border="1">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+
+    <cite>
+        标题
+    </cite>
+
+    <code>
+        const a = "123";
+    </code>
+
+    <menu>
+        <command onclick="alert('Hello World')">
+            Click Me!</command>
+    </menu>
+    <input list="cars" />
+    <datalist id="cars">
+        <option value="BMW">
+        <option value="Ford">
+        <option value="Volvo">
+    </datalist>
+
+    <dl>
+        <dt>计算机</dt>
+        <dd>用来计算的仪器 ... ...</dd>
+        <dt>显示器</dt>
+        <dd>以视觉方式显示信息的装置 ... ...</dd>
+    </dl>
+
+    a dozen is <del datetime="20191022">20</del> 12 pieces
+
+    <dialog open>这是打开的对话窗口</dialog>
+
+    <dir>
+        <li>HTML</li>
+        <li>XHTML</li>
+        <li>CSS</li>
+    </dir>
+
+
+    <embed type="application/pdf" href="./static/1.pdf" src="./static/1.pdf"/>
+</body>
+
+</html>
